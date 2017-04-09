@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
         Log.i("INFO", PassField.getText().toString() + " " + NameField.getText().toString());
 
         Toast.makeText(MainActivity.this, NameField.getText().toString(),Toast.LENGTH_SHORT).show();
+        
+        ImageView image = (ImageView) findViewById(R.id.ChickenImage);
+        image.setImageResource(R.drawable.chicken2);
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
